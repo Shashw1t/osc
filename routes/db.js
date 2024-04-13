@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectToDatabase = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/aeonaxy', {
+    await mongoose.connect(`mongodb+srv://oscdemo:${process.env.MONGODB_PASSWORD}@oscdemo.riu5siu.mongodb.net/`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

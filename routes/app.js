@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const connectToDatabase = require('../db');
+const connectToDatabase = require('./db');
 const User = require('../models/User');
 const TermsAndConditions = require('../models/TermsAndConditions');
 
