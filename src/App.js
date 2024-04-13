@@ -45,9 +45,7 @@ function MainApp() {
       <div className="app">
         <Switch>
           <Route exact path="/">
-            <Index />
-          </Route>
-          <Route path="/signup">
+            <LeftSide />
             <SignupForm />
           </Route>
           <Route path="/terms-and-conditions">
@@ -56,9 +54,7 @@ function MainApp() {
           <Route path="/account">
             <AccountButton />
           </Route>
-          <Route path="/app">
-            <App />
-          </Route>
+          {/* Define routes for other components */}
         </Switch>
       </div>
     </Router>

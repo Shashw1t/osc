@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../styles.css';
 
-
 const TermsAndConditions = () => {
   const [termsAndConditions, setTermsAndConditions] = useState('');
 
   useEffect(() => {
     async function fetchTermsAndConditions() {
       try {
-        const response = await axios.get('../terms-and-conditions');
+        const response = await axios.get('/terms-and-conditions');
         setTermsAndConditions(response.data.content);
       } catch (error) {
         console.error('Error fetching terms and conditions:', error);
