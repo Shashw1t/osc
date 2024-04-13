@@ -1,7 +1,22 @@
+// // index.js
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import App from './App'; // Assuming App.js is in the same directory
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+
+
+
+// index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'; // Import App directly
-// import './index.css';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
