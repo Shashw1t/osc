@@ -1,11 +1,16 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const cors = require('cors');
+const port = 5000;
 const connectToDatabase = require('./db');
 const User = require('../models/User');
 const TermsAndConditions = require('../models/TermsAndConditions');
 
 app.use(express.json());
+app.use(cors());
+
+connectToDatabase();
+
 
 // API endpoints
 app.post('/signup', async (req, res) => {
@@ -47,4 +52,4 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-connectToDatabase();
+

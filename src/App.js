@@ -1,36 +1,3 @@
-// // App.js
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import SignupForm from './components/SignupForm';
-// import TermsAndConditions from './components/TermsAndConditions';
-// import AccountButton from './components/AccountButton';
-// import Index from './index';
-// import './styles.css';
-
-// function App() {
-//   return (
-//     <Router>
-//       <div className="app">
-//         <Routes>
-//           <Route exact path="/" element={<Index />} />
-//           <Route path="/signup" element={<SignupForm />} />
-//           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-//           <Route path="/account" element={<AccountButton />} />
-//           {/* Define routes for other components */}
-//         </Routes>
-//       </div>
-//     </Router>
-//   );
-// }
-
-// export default App;]
-
-
-
-
-
-
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SignupForm from './components/SignupForm';
